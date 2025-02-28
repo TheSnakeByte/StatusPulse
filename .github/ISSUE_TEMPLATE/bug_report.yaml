@@ -59,7 +59,7 @@ body:
     id: os
     attributes:
       label: "Operating System"
-      description: "State the OS you are running StatusPulse on."
+      description: "State the operating system you are running StatusPulse on."
       placeholder: "E.g. Debian 12 (Bookworm), 64-bit"
     validations:
       required: true
