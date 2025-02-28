@@ -1,7 +1,6 @@
 name: "Bug Report"
 description: "Report a bug to help us improve the project"
-title: ""
-labels: []
+labels: ["bug"]
 assignees:
   - your-username
 
