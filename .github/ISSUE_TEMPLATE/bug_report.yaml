@@ -9,13 +9,13 @@ body:
     attributes:
       value: |
         Thanks for taking the time to report a bug! Please fill out the details below.
+        Before submitting, please search existing issues to see if this problem has already been reported.
 
   - type: textarea
     id: bug_description
     attributes:
-      label: "Describe the bug"
+      label: "Describe the Bug"
       description: "A clear and concise description of what the bug is."
-      placeholder: "E.g., The app freezes when I click on 'Create'"
     validations:
       required: true
 
@@ -23,11 +23,8 @@ body:
     id: steps_to_reproduce
     attributes:
       label: "Steps to Reproduce"
-      description: "List all steps to reproduce the issue."
-      placeholder: |
-        1. Go to '...'
-        2. Click on '...'
-        3. See error
+      description: "List all the steps to reproduce the issue."
+      placeholder: "Describe the steps here..."
       value: |
         1. 
         2. 
@@ -40,7 +37,6 @@ body:
     attributes:
       label: "Expected Behavior"
       description: "What is the expected behaviour?"
-      placeholder: "E.g., The page should be created without freezing."
     validations:
       required: true
 
@@ -49,7 +45,6 @@ body:
     attributes:
       label: "Actual Behavior"
       description: "What is the actual behaviour?"
-      placeholder: "E.g., The app freezes after clicking 'Create'."
     validations:
       required: true
 
@@ -57,7 +52,7 @@ body:
     id: logs_screenshots
     attributes:
       label: "Screenshots or Logs"
-      description: "If applicable, add screenshots or log outputs."
+      description: "Optional. If applicable, add screenshots or log outputs."
       placeholder: "Add screenshots or paste log outputs here."
 
   - type: input
@@ -91,6 +86,5 @@ body:
     id: additional_context
     attributes:
       label: "Additional Context"
-      description: "Any other details that might help us understand the issue."
-      placeholder: "E.g., I noticed this bug after updating to the latest version."
+      description: "Optional. If applicable, state any other context/details. E.g. configurations, patterns, etc..."
 
