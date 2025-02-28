@@ -1,7 +1,7 @@
 name: "Bug Report"
 description: "Report a bug to help us improve the project"
-title: "[Bug]: "
-labels: ["bug"]
+title: ""
+labels: []
 assignees:
   - your-username
 
@@ -11,12 +11,14 @@ body:
       value: |
         Thanks for taking the time to report a bug! Please fill out the details below.
 
-  - type: input
+  - type: textarea
     id: bug_description
     attributes:
       label: "Describe the bug"
       description: "A clear and concise description of what the bug is."
-      placeholder: "E.g., The app crashes when I click on 'Start'"
+      placeholder: "E.g., The app freezes when I click on 'Create'"
+    validations:
+      required: true
 
   - type: textarea
     id: steps_to_reproduce
@@ -31,53 +33,60 @@ body:
         1. 
         2. 
         3. 
+    validations:
+      required: true
 
   - type: textarea
     id: expected_behavior
     attributes:
       label: "Expected Behavior"
-      description: "What did you expect to happen?"
-      placeholder: "E.g., The app should load without crashing."
+      description: "What is the expected behaviour?"
+      placeholder: "E.g., The page should be created without freezing."
+    validations:
+      required: true
 
   - type: textarea
-    id: current_behavior
+    id: actual_behavior
     attributes:
-      label: "Current Behavior"
-      description: "What actually happens?"
-      placeholder: "E.g., The app freezes after clicking 'Start'."
+      label: "Actual Behavior"
+      description: "What is the actual behaviour?"
+      placeholder: "E.g., The app freezes after clicking 'Create'."
+    validations:
+      required: true
 
   - type: textarea
     id: logs_screenshots
     attributes:
       label: "Screenshots or Logs"
       description: "If applicable, add screenshots or log outputs."
-      placeholder: "Drag and drop images or paste log outputs here."
+      placeholder: "Add screenshots or paste log outputs here."
 
-  - type: dropdown
-    id: operating_system
+  - type: input
+    id: os
     attributes:
       label: "Operating System"
-      description: "Select the OS you're using."
-      options:
-        - "Windows"
-        - "macOS"
-        - "Linux (Debian-based)"
-        - "Linux (Arch-based)"
-        - "Other"
+      description: "State the OS you are running StatusPulse on."
+      placeholder: "E.g. Debian 12 (Bookworm), 64-bit"
+    validations:
+      required: true
 
   - type: input
     id: node_version
     attributes:
       label: "Node.js Version"
-      description: "Run `node -v` to get your Node.js version."
-      placeholder: "E.g., v20.8.0"
+      description: "Run `node -v` to find your Node.js version."
+      placeholder: "E.g. v20.8.0"
+    validations:
+      required: true
 
   - type: input
     id: statuspulse_version
     attributes:
       label: "StatusPulse Version"
-      description: "Which version of StatusPulse are you using?"
-      placeholder: "E.g., v1.0.0"
+      description: "Run `npm run version` in your StatusPulse directory to find the version."
+      placeholder: "E.g. v1.0.0"
+    validations:
+      required: true
 
   - type: textarea
     id: additional_context
