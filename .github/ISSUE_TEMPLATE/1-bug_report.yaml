@@ -9,7 +9,7 @@ body:
     attributes:
       value: |
         Thanks for taking the time to report a bug! Please fill out the details below.
-        Before submitting, please search existing issues to see if this problem has already been reported.
+        Before submitting, please search [existing issues](https://github.com/TheSnakeByte/StatusPulse/issues?q=is%3Aissue) to see if this problem has already been reported.
 
   - type: textarea
     id: bug_description
@@ -93,5 +93,5 @@ body:
     id: additional_context
     attributes:
       label: "Additional Context"
-      description: "Optional. If applicable, state any other context/details. E.g. configurations, patterns, etc..."
+      description: "Optional. If applicable, state any other relevant context/details. E.g. configurations, patterns, etc..."
 
