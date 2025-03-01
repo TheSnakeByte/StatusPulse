@@ -1,5 +1,5 @@
 blank_issues_enabled: true
 contact_links:
-  - name: Security Issue
+  - name: Report a Security Vulnerability
     url: https://github.com/TheSnakeByte/StatusPulse/security/advisories
-    about: Please report security vulnerabilities here.
+    about: Report a vulnerability that affects the security of StatusPulse.
